@@ -10,7 +10,7 @@ jobs:
       runs-on : ubuntu-latest
 
       steps:
-           - name: checkout repository 
            - uses: actions/checkout@v4
-            run echo "Hello Github Actions workflow in running successfully"
+           - name: checkout repository 
+             run echo "Hello Github Actions workflow in running successfully"
             
