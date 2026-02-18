@@ -1,0 +1,16 @@
+name: Basic CI workflow 
+
+on:
+  push:
+    branches: [ "main"]
+  pull_request :
+    branches: [ "main" ]
+jobs: 
+   build:
+     runs-on : ubuntu-latest
+
+     steps:
+       - uses: actions/checkout@v4
+       - name: checkout repository 
+         run: echo "Hello Github Actions workflow in running successfully"
+            
